@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="zFk-0y-rQQ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="fau-uw-Is4">
+            <objects>
+                <windowController id="zFk-0y-rQQ" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" id="oI4-0N-Z6R">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="163" y="197" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1280" height="775"/>
+                        <view key="contentView" id="yKN-t9-jYp">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <connections>
+                            <outlet property="delegate" destination="zFk-0y-rQQ" id="myw-eC-U1U"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="zX3-4M-Qcz" kind="relationship" relationship="window.shadowedContentViewController" id="30G-AK-9tA"/>
+                    </connections>
+                </windowController>
+                <customObject id="pyC-Od-hOa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-19" y="-241"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XnO-Xm-G1m">
+            <objects>
+                <viewController id="zX3-4M-Qcz" sceneMemberID="viewController">
+                    <view key="view" id="rAJ-fb-1KF">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="u8k-Dy-4l8" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="688" y="-272"/>
+        </scene>
+    </scenes>
+</document>
